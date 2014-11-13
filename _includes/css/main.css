@@ -355,3 +355,13 @@ nav ul li:hover, nav ul li.active {
     column-count:         2;
   }
 }
+
+
+table, td, th {
+    border: 1px solid green;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
