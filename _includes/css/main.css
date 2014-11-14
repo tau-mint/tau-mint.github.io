@@ -359,6 +359,8 @@ nav ul li:hover, nav ul li.active {
 
 table {
     width: 120%;
+    border-radius: 5px;
+    overflow: hidden;
     border-collapse: separate;
     @include border-radius(5px);
     margin:50px -100px;
