@@ -23,11 +23,11 @@ $.extend($.easing,
             scrollSpeed: 800,
             activateParentNode: true,
         }, options );
-        navItems = this;
+        navItems = $(this).filter(function (n) {return (n.attr("id") != "tidy")});
 
         //attatch click listeners
     	navItems.on('click', function(event){
-    		event.preventDefault();
+	    if ($(this).attr("id") != "tidy") event.preventDefault();
             var navID = $(this).attr("href").substring(1);
             disableScrollFn = true;
             activateNav(navID);
@@ -57,6 +57,7 @@ $.extend($.easing,
 
     function populateDestinations() {
         navItems.each(function(){
+	    if ($(this).attr('id') == "tidy") continue;
             var scrollID = $(this).attr('href').substring(1);
             navs[scrollID] = (settings.activateParentNode)? this.parentNode : this;
             sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
@@ -92,4 +93,3 @@ $(document).ready(function (){
 	});
 
 });
-
