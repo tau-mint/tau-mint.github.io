@@ -358,10 +358,11 @@ nav ul li:hover, nav ul li.active {
 
 
 table, td, th {
-    border: 1px solid green;
+    font-size: 20px;
+    border: 1px solid #5B757A;
 }
 
 th {
-    background-color: green;
+    background-color: #5B757A;
     color: white;
 }
