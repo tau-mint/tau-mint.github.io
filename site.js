@@ -84,9 +84,8 @@ $(document).ready(function (){
 
     //links going to other sections nicely scroll
 	$(".container a").each(function(){
-	    console.log($(this).attr("id"));
 	    try {
-	    else if ($(this).attr("href").charAt(0) == '#'){
+	    if ($(this).attr("href").charAt(0) == '#'){
             $(this).on('click', function(event) {
         		event.preventDefault();
                 var target = $(event.target).closest("a");
