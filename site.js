@@ -23,11 +23,11 @@ $.extend($.easing,
             scrollSpeed: 800,
             activateParentNode: true,
         }, options );
-        navItems = $(this).filter(function (n) {return (n.attr("id") != "tidy")});
+        navItems = $(this).filter(function (index) {return ($(this).attr("id") != "a-tidy")});
 
         //attatch click listeners
     	navItems.on('click', function(event){
-	    if ($(this).attr("id") != "tidy") event.preventDefault();
+	    if ($(this).attr("id") != "a-tidy") event.preventDefault();
             var navID = $(this).attr("href").substring(1);
             disableScrollFn = true;
             activateNav(navID);
@@ -57,7 +57,9 @@ $.extend($.easing,
 
     function populateDestinations() {
         navItems.each(function(){
-	    if ($(this).attr('id') == "tidy") continue;
+	    if ($(this).attr('id') == "a-tidy") {
+		return;
+	    }
             var scrollID = $(this).attr('href').substring(1);
             navs[scrollID] = (settings.activateParentNode)? this.parentNode : this;
             sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
@@ -82,14 +84,18 @@ $(document).ready(function (){
 
     //links going to other sections nicely scroll
 	$(".container a").each(function(){
-        if ($(this).attr("href").charAt(0) == '#'){
+	    console.log($(this).attr("id"));
+	    try {
+	    else if ($(this).attr("href").charAt(0) == '#'){
             $(this).on('click', function(event) {
         		event.preventDefault();
                 var target = $(event.target).closest("a");
                 var targetHight =  $(target.attr("href")).offset().top
             	$('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
             });
+	    }
         }
+		catch (err){ return; };
 	});
 
 });
