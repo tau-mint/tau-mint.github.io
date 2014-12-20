@@ -13,7 +13,7 @@ fa-icon: pencil
 ## Professor Alex Furman ##
 University of Illinois at Chicago
 
-### <a id="Furman2"></a>  Simplicity of the Lyapunov spectrum via Boundary theory ###
+### <a id="Furman2"></a>  Simplicity of the Lyapunov spectrum via boundary theory ###
 
 #### Abstract: ####
 Consider products of matrices that are chosen using some ergodic
