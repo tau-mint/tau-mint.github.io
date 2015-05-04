@@ -51,6 +51,8 @@ discussed.
 Joint work with O. Nguyen (Yale) and Y. Do (UoV).
 
 ----
+----
+----
 
 ## Professor Grigori Olshanski ##
 IITP and Higher School of Economics, Moscow
@@ -84,6 +86,8 @@ characteristics of random permutations of large size. But are there
 reasonable models of random permutations of actually infinite size?
 I will describe some positive results in this direction.
 
+----
+----
 ----
 
 ## Professor Alex Furman ##
@@ -132,6 +136,8 @@ inherit from the ambient group.
 
 The talk is based on a joint work with Uri Bader.
 
+----
+----
 ----
 
 ## Professor Henry Berestycki ##
