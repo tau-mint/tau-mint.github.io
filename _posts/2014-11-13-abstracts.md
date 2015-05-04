@@ -13,7 +13,7 @@ fa-icon: pencil
 ## Van Vu ##
 Yale University
 
-### <a id="vanlu1"></a> Random matrices: Gaps between eigenvalues ###
+### <a id="VanVu1"></a> Random matrices: Gaps between eigenvalues ###
 
 #### Abstract: ####
 Gaps (or spacings) between consecutive eigenvalues of a random hermitian matrix plays a central role in random matrix theory.
@@ -30,7 +30,7 @@ Joint work with H. Nguyen (OSU) and T. Tao (UCLA).
 
 +++
 
-### <a id="vanlu2"></a> Roots of random polynomials with general coefficients. ###
+### <a id="VanVu2"></a> Roots of random polynomials with general coefficients. ###
 
 #### Abstract: ####
 Roots of polynomials  with random coefficients have been studied for a long time,
