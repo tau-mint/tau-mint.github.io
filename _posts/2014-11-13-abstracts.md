@@ -10,6 +10,50 @@ fa-icon: pencil
 
 ---
 
+## Van Vu ##
+Yale University
+
+### <a id="VanVu1"></a> Random matrices: Gaps between eigenvalues ###
+
+#### Abstract: ####
+Gaps (or spacings) between consecutive eigenvalues of a random hermitian matrix plays a central role in random matrix theory.
+When Wigner used random matrix as a model in physics, it was the behavior of the gaps that captured his attention.
+Another famous example is the  Dyson-Montgomery discussion  connecting these gaps with gaps between zeroes of the zeta function.
+
+On the other hand, we still do not understand these gaps very well  at the microscopic level. For instance, it has only been proved very recently by Tao and the speaker that  for a random +-1 matrix, with high probability  all gaps are positive.
+
+In this talk, we will discuss some recent progress in bounding these gaps, based on purely combinatorial techniques,
+ for very general classes of random matrices. We will also present  applications in both computer science
+and numerical analysis (among others, solutions to  questions by Babai, and by Deker-Lee-Linial).
+
+Joint work with H. Nguyen (OSU) and T. Tao (UCLA).
+
++++
+
+### <a id="VanVu2"></a> Roots of random polynomials with general coefficients. ###
+
+#### Abstract: ####
+Roots of polynomials  with random coefficients have been studied for a long time,
+starting with fundamental works of Littlewood and Offord in the 1940s, who showed that
+random polynomials  with iid coefficients have very few  real roots.  Polynomials with iid coefficients are frequently referred to
+as Kac polynomials.
+
+The number of real roots of Kac polynomials has been computed
+asymptotically  thanks to a remarkable sequence of works by Kac, Erdos-Offord, and Ibragimov-Maslova.
+However, we know very little about all other cases, where the coefficients are independent, but can have different distributions
+(different variances, for instance).
+
+In this talk, we are going to give a  review of these classical works, focusing on the main ideas behind them,  and then
+ present a recent development that provides a good understanding for polynomials with general coefficients with moderate growth (these coefficients can even have
+implicit variances).  As a corollary, we   refine and extend Ibragimov-Maslova result for hyperbolic  polynomials. The talk is self-contained and several open questions will also be
+discussed.
+
+Joint work with O. Nguyen (Yale) and Y. Do (UoV).
+
+----
+----
+----
+
 ## Professor Grigori Olshanski ##
 IITP and Higher School of Economics, Moscow
 
@@ -42,6 +86,8 @@ characteristics of random permutations of large size. But are there
 reasonable models of random permutations of actually infinite size?
 I will describe some positive results in this direction.
 
+----
+----
 ----
 
 ## Professor Alex Furman ##
@@ -90,6 +136,8 @@ inherit from the ambient group.
 
 The talk is based on a joint work with Uri Bader.
 
+----
+----
 ----
 
 ## Professor Henry Berestycki ##
