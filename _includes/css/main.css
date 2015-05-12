@@ -69,7 +69,8 @@ hr {
 .left, .container .left { text-align: left; }
 
 .container h1, .container h2, .container h3, .container h4 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
     text-align: center;
     padding: 0 4%;
 }
@@ -79,7 +80,7 @@ hr {
 }
 .container ol, .container ul { padding: 0 8%; }
 .container p:first-of-type {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 /* keep embedded videos fluid! */
@@ -363,7 +364,7 @@ table {
     overflow: hidden;
     border-collapse: separate;
     @include border-radius(5px);
-    margin:50px 0px;
+    margin:10px 0px;
     @include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
     background: #b9e5d5;
     table-layout: fixed;
@@ -474,7 +475,7 @@ thead th {
 @media (min-width: 550px) {
     table {
         width: 110%;
-        margin: 50px -25px;
+        margin: 10px -25px;
     }
     tbody tr td {
         padding: 0;
