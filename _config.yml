@@ -2,11 +2,11 @@
 
 port: 4000
 host: 0.0.0.0
-safe: false
+safe: true
 
 
 ### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
+exclude: [CNAME, README.md, .gitignore, lectures.org]
 permalink: / ## disables post output
 timezone: Asia/Jerusalem
 lsi: false
