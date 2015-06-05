@@ -1,7 +1,16 @@
 ---
 layout: page
+title: "MINT Distinguished Lectures"
+bg: mint2   #defined in _config.yml, can use html color like '#010101'
+color: black  #text color
+style: center
+fa-icon: mortar-board
 ---
-{% for page in site.posts reversed %}
+
+# MINT Distinguished Lectures
+
+{% for page in site.posts %}
+{% if page.categories contains 'lectures' %}
 {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
 <div id="{{id}}" class="section p-{{id}}">
   {% if page.icon %}
@@ -22,4 +31,5 @@ layout: page
     {{ page.content }}
   </div>
 </div>
+{% endif %}
 {% endfor %}

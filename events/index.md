@@ -1,7 +1,11 @@
 ---
 layout: page
 ---
+
+# MINT Events
+
 {% for page in site.posts reversed %}
+{% if page.categories contains 'events' %}
 {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
 <div id="{{id}}" class="section p-{{id}}">
   {% if page.icon %}
@@ -22,4 +26,5 @@ layout: page
     {{ page.content }}
   </div>
 </div>
+{% endif %}
 {% endfor %}
