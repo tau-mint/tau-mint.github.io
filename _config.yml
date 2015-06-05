@@ -39,3 +39,6 @@ colors:
   mint1:     '#b9e5d5'
   mint2:     '#7afba0'
   mint3:     '#96f0c8'
+
+## Misc additional config
+excerpt_separator: <!--+++-->
