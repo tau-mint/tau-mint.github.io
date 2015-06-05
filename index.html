@@ -41,3 +41,20 @@ style: center
     </div>
   </div>
 </div>
+<div id="upcoming" class="section upcoming">
+  <div class="container {{page.style}}">
+    <h2>Upcoming</h2>
+    {% assign upcoming = false %}
+    {% for post in site.posts reversed%}
+    {% if post.date > site.time %}
+    {{ post.excerpt }}
+    {% assign upcoming = true %}
+    {% break %}
+    {% endif %}
+    {% endfor %}
+    {% if upcoming != true %}
+    <h3>No upcoming scheduled</h3>
+    {% endif %}
+  </div>
+</div>
+<div class="center">Updated: {{site.time|date_to_string}}</div>
