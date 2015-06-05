@@ -9,6 +9,7 @@ layout: lecture
 | 2014-12-01 | Mon | 12:15 | Schreiber 006 | [Propagation in non homogeneous media and applications](#HBer1)                                   |
 | 2014-12-03 | Wed | 14:10 | Schreiber 209 | [The effect of domain shape on propagation and blocking for reaction-diffusion equations](#HBer2) |
 
+<!--+++-->
 
 ### <a id="HBer1"></a> Propagation in non homogeneous media and applications ####
 
@@ -34,7 +35,7 @@ inclusion of a line with fast diffusion on biological invasions in the
 plane. I will report on recent results
 on this question.
 
-+++
+---
 
 ### <a id="HBer2"></a> The effect of domain shape on propagation and blocking for reaction-diffusion equations ###
 

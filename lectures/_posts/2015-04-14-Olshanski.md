@@ -10,6 +10,9 @@ layout: lecture
 | 2015-04-15 | Wed | 14:10 | Schreiber 309 | [What are infinite random permutations?](#Olshanski1)                                             |
 
 
+<!--+++-->
+---
+
 ### <a id="Olshanski1"></a> Markov processes of algebraic origin ###
 
 #### Abstract: ####
@@ -26,7 +29,7 @@ that in the "dual" model, the transition to N=infinity can be carried out
 by essentially algebraic tools. This is in contrast with Dyson's model
 whose study in the N=infinity case requires hard analytic work.
 
-+++
+---
 
 ### <a id="Olshanski2"></a> What are infinite random permutations? ###
 
