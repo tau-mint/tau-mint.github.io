@@ -1,5 +1,10 @@
 ---
 layout: page
+title: "Events"
+bg: mint3   #defined in _config.yml, can use html color like '#010101'
+color: black  #text color
+style: center
+fa-icon: mortar-board
 ---
 
 # MINT Events
@@ -28,3 +33,8 @@ layout: page
 </div>
 {% endif %}
 {% endfor %}
+
+<!-- Local Variables:  -->
+<!-- mode: web -->
+<!-- End: -->
+

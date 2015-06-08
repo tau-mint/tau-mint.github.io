@@ -46,7 +46,7 @@ style: center
     <h2>Upcoming</h2>
     {% assign upcoming = false %}
     {% for post in site.posts reversed%}
-    {% if post.date > site.time %}
+    {% if post.date >= site.time %}
     {{ post.excerpt }}
     {% assign upcoming = true %}
     {% break %}
