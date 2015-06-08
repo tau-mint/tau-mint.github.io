@@ -13,9 +13,10 @@ layout: lecture
 <!--+++-->
 ---
 
-### <a id="Olshanski1"></a> Markov processes of algebraic origin ###
+### Abstracts: ###
 
-#### Abstract: ####
+#### <a id="Olshanski1"></a> Markov processes of algebraic origin ####
+
 The Brownian motion on the group U(N) of unitary matrices gives rise to a
 Markov process on the matrix eigenvalues, that is, on N-particle
 configurations on the circle (Freeman Dyson, 1962). Heuristic arguments
@@ -31,9 +32,8 @@ whose study in the N=infinity case requires hard analytic work.
 
 ---
 
-### <a id="Olshanski2"></a> What are infinite random permutations? ###
+#### <a id="Olshanski2"></a> What are infinite random permutations? ####
 
-#### Abstract: ####
 Random permutations can be viewed as a combinatorial analog of random
 matrices. In random matrix theory, people study the asymptotic behavior of
 spectra of large random matrices. Likewise, the literature in combinatorial

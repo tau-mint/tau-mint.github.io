@@ -10,10 +10,11 @@ layout: lecture
 | 2014-12-03 | Wed | 14:10 | Schreiber 209 | [The effect of domain shape on propagation and blocking for reaction-diffusion equations](#HBer2) |
 
 <!--+++-->
+---
 
-### <a id="HBer1"></a> Propagation in non homogeneous media and applications ####
+### Abstracts: ###
 
-#### Abstract: ####
+#### <a id="HBer1"></a> Propagation in non homogeneous media and applications ####
 
 The classical theory of the Fisher and Kolmogorov-Petrovsky-Piskunov
 equation derives the spreading
@@ -37,9 +38,7 @@ on this question.
 
 ---
 
-### <a id="HBer2"></a> The effect of domain shape on propagation and blocking for reaction-diffusion equations ###
-
-#### Abstract: ####
+#### <a id="HBer2"></a> The effect of domain shape on propagation and blocking for reaction-diffusion equations ####
 
 I will discuss reaction-diffusion equations motivated by
 biology and medicine for which the aim
