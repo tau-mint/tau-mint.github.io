@@ -2,7 +2,7 @@
 layout: lecture
 ---
 
-### Lecture: Professor Grigori Olshanski (IITP and Higher School of Economics, Moscow)
+### Lecture: Professor Grigori Olshanski (IITP and Higher School of Economics, Moscow) {#Olshanski}
 
 |       Date | Day |  Time | Location      | Title                                                                                             |
 |------------+-----+-------+---------------+---------------------------------------------------------------------------------------------------|
@@ -11,11 +11,13 @@ layout: lecture
 
 
 <!--+++-->
----
 
 ### Abstracts: ###
 
-#### <a id="Olshanski1"></a> Markov processes of algebraic origin ####
+---
+
+
+#### Markov processes of algebraic origin #### {#Olshanski1}
 
 The Brownian motion on the group U(N) of unitary matrices gives rise to a
 Markov process on the matrix eigenvalues, that is, on N-particle
@@ -32,7 +34,7 @@ whose study in the N=infinity case requires hard analytic work.
 
 ---
 
-#### <a id="Olshanski2"></a> What are infinite random permutations? ####
+#### What are infinite random permutations? #### {#Olshanski2}
 
 Random permutations can be viewed as a combinatorial analog of random
 matrices. In random matrix theory, people study the asymptotic behavior of

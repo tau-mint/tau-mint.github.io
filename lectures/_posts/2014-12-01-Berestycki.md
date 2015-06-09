@@ -2,7 +2,7 @@
 layout: lecture
 ---
 
-### Lecture: Professor Henri Berestycki (EHESS, Paris)
+### Lecture: Professor Henri Berestycki (EHESS, Paris) {#HBer}
 
 |       Date | Day |  Time | Location      | Title                                                                                             |
 |------------+-----+-------+---------------+---------------------------------------------------------------------------------------------------|
@@ -10,11 +10,13 @@ layout: lecture
 | 2014-12-03 | Wed | 14:10 | Schreiber 209 | [The effect of domain shape on propagation and blocking for reaction-diffusion equations](#HBer2) |
 
 <!--+++-->
----
 
 ### Abstracts: ###
 
-#### <a id="HBer1"></a> Propagation in non homogeneous media and applications ####
+---
+
+
+#### Propagation in non homogeneous media and applications #### {#HBer1}
 
 The classical theory of the Fisher and Kolmogorov-Petrovsky-Piskunov
 equation derives the spreading
@@ -38,7 +40,7 @@ on this question.
 
 ---
 
-#### <a id="HBer2"></a> The effect of domain shape on propagation and blocking for reaction-diffusion equations ####
+#### The effect of domain shape on propagation and blocking for reaction-diffusion equations #### {#HBer2}
 
 I will discuss reaction-diffusion equations motivated by
 biology and medicine for which the aim
