@@ -179,9 +179,8 @@ nav ul li:hover, nav ul li.active {
     position:relative;
     display:block;
     width:100%;
-    min-height:300px;
-    padding:210px 0;
-    background:url(img/bgnoise.png);
+    min-height:200px;
+    padding:10px 0;
     /* generated noise from noisetexturegenerator.com */
 }
 
@@ -211,12 +210,12 @@ nav ul li:hover, nav ul li.active {
 
 .sectiondivider {
     width:270px;
-    height:270px;
-    padding:15px;
-    position:absolute;
-    top:-135px;
+    height:0px;
+    padding:1px;
+    position:relative;
     left:50%;
     margin-left:-135px;
+    background-color: {{ site.colors.black }};
 }
 
 .sectiondivider img {
@@ -292,26 +291,6 @@ nav ul li:hover, nav ul li.active {
 
 
     .section { padding:130px 0; }
-    .sectiondivider {
-        width:200px;
-        height:200px;
-        padding:15px;
-        top:-100px;
-        margin-left:-100px;
-    }
-    .sectiondivider img {
-        width:150px;
-        height:180px;
-    }
-    .sectiondivider .fa-stack {
-        font-size: 100px;
-        margin-top: -14px;
-    }
-    .sectiondivider h5 {
-        font-size:15px;
-        bottom:30px;
-        width:170px
-    }
 
     .columned {
         -webkit-column-count: 2;
@@ -367,7 +346,7 @@ thead th {
     }
     tbody tr td {
         font-size:12px!important;
-	padding:0!important;
+	      padding:0!important;
     }
 
     table {
@@ -376,11 +355,11 @@ thead th {
     }
     tbody tr td {
         padding: 0;
-	margin: 0;
+	      margin: 0;
     }
     thead tr th {
         padding: 0;
-	margin: 0;
+	      margin: 0;
     }
     thead tr th:first-child {
         width: 24%;
@@ -544,7 +523,7 @@ tbody tr td {
 }
 
 tbody tr:nth-child(2n) {
-    background: #96f0c8;
+    background: {{ site.colors.mint3 }};
 }
 
 tbody tr:last-child td {
@@ -574,25 +553,31 @@ tbody:hover > tr:hover td {
 /* Checkbox Toggle */
 
 .toggle {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
 }
 
 .toggle label {
-  user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
 
-.toggle:checked ~ label{
-  display:none;
+.toggle:checked ~ label div{
+    display:none;
 }
 
-.toggle ~ div{
-  display:none;
+.toggle ~ .content {
+    display:none;
 }
 
-.toggle:checked ~ div{
+.toggle:checked ~ .content {
     display:block;
+}
+
+/* Title Section */
+.title {
+    padding-bottom:100px;
 }
 
 /* Local Variables: */
