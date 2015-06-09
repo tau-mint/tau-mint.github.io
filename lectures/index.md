@@ -27,7 +27,13 @@ fa-icon: mortar-board
     <h5 class="icon-title">{{ page.title }}</h5>
   </div>
   {% endif %}
-  <div class="container {{ page.style }}">
+  <input type="checkbox" id="toggle-{{id}}" class="toggle">
+  <label for="toggle-{{id}}" onclick>
+  <div id="excerpt-{{id}}" class="container excerpt">
+    {{ page.excerpt }}
+  </div>
+  </label>
+  <div id="content-{{id}}" class="container {{ page.style }} content">
     {{ page.content }}
   </div>
 </div>

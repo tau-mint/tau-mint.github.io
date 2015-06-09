@@ -570,3 +570,31 @@ tbody:hover > tr:hover td {
     color:#2d2d2d;
     @include opacity(1.0);
 }
+
+/* Checkbox Toggle */
+
+.toggle {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+.toggle label {
+  user-select: none;
+}
+
+.toggle:checked ~ label{
+  display:none;
+}
+
+.toggle ~ div{
+  display:none;
+}
+
+.toggle:checked ~ div{
+    display:block;
+}
+
+/* Local Variables: */
+/* mode: web */
+/* End: */
