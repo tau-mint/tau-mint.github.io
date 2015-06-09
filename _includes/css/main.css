@@ -19,7 +19,6 @@ html { box-sizing: border-box; }
 {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
 {% capture bg %}{% if site.colors[node.bg] %}{{ site.colors[node.bg] }}{% else %}{{ node.bg }}{% endif %}{% endcapture %}
 {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
-nav .p-{{id}} { border-color: {{ bg }}; }
 #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
 #{{id}} a { color: {{ fg }}; }
 #{{id}} .sectiondivider { color: {{ bg }}; }
@@ -30,7 +29,7 @@ nav .p-{{id}} { border-color: {{ bg }}; }
 {% capture id %}{{ node.title }}{% endcapture %}
 {% capture bg %}{% if site.colors[node.bg] %}{{ site.colors[node.bg] }}{% else %}{{ node.bg }}{% endif %}{% endcapture %}
 {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
-nav .p-{{id}} { border-color: {{ bg }}; }
+nav .nav-{{id}} { border-color: {{ bg }}; }
 #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
 #{{id}} a { color: {{ fg }}; }
 #{{id}} .sectiondivider { color: {{ bg }}; }
@@ -40,7 +39,7 @@ nav .p-{{id}} { border-color: {{ bg }}; }
 
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
-/* spesifically inline code */
+/* specifically inline code */
 code {
     background: rgba(255,255,255,0.2);
     display: inline;
@@ -267,52 +266,6 @@ nav ul li:hover, nav ul li.active {
 }
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
-
-
-
-/* ----- fork on github banner ----- */
-#forkongithub a {
-    color:#fff;
-    text-decoration:none;
-    font-family:arial,sans-serif;
-    text-align:center;
-    font-weight:700;
-    font-size:1rem;
-    line-height:2rem;
-    position:relative;
-    transition:.5s;
-    padding:5px 40px;
-}
-#forkongithub a::before, #forkongithub a::after {
-                             content:""; width:100%; display:block; position:absolute;
-                             top:1px; left:0; height:1px; background:#fff;
-                         }
-#forkongithub a::after { bottom:1px; top:auto; }
-@media screen and (min-width:800px) {
-    #forkongithub {
-        position:fixed;
-        display:block;
-        top:0;
-        right:0;
-        width:200px;
-        overflow:hidden;
-        height:200px;
-        z-index:9999;
-    }
-    #forkongithub a {
-        width:200px;
-        position:absolute;
-        top:60px;
-        right:-60px;
-        transform:rotate(45deg);
-        -webkit-transform:rotate(45deg);
-        -ms-transform:rotate(45deg);
-        -moz-transform:rotate(45deg);
-        -o-transform:rotate(45deg);
-        box-shadow:4px 4px 10px rgba(0,0,0,0.8);
-        box-sizing: content-box;
-    }
-}
 
 
 
