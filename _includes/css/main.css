@@ -290,7 +290,7 @@ nav ul li:hover, nav ul li.active {
     .container h4 { font-size: 18px; }
 
 
-    .section { padding:130px 0; }
+  .section { padding:20px 0; }
 
     .columned {
         -webkit-column-count: 2;
@@ -575,11 +575,28 @@ tbody:hover > tr:hover td {
     display:block;
 }
 
-/* Title Section */
-.title {
+/* Padding Sections */
+#title {
     padding-bottom:100px;
 }
 
+#upcoming {
+    padding-bottom:270px;
+}
+
+/* Fix Homepage alignment */
+#Home h2 {
+  margin-top: 0px;
+  line-height: 30px;
+}
+
+section {
+  padding-bottom: 0px;
+}
+
+section {
+  padding-bottom: 0px;
+}
 /* Local Variables: */
 /* mode: web */
 /* End: */
