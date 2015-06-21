@@ -20,9 +20,8 @@
     {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
 	  {% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
   </head>
-  <body>
+  <body id="body-{{ page.title }}">
     <div id="main">
-
       {% include nav.html %}
       {% capture id %}{{ page.title }}{% endcapture %}
       <div id="{{ id }}">

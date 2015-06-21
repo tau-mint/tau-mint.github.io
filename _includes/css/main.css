@@ -31,6 +31,7 @@ html { box-sizing: border-box; }
 {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
 nav .nav-{{id}} { border-color: {{ bg }}; }
 #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
+#body-{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
 #{{id}} a { color: {{ fg }}; }
 #{{id}} .sectiondivider { color: {{ bg }}; }
 {% endfor %}
@@ -195,7 +196,13 @@ nav ul li:hover, nav ul li.active {
     text-align:center;
     background-color:#2e2e2e;
     background-image:none;
-}
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+  }
+
 #footer .container p { font-size:13px; margin:0; }
 
 .subtlecircle {
@@ -550,6 +557,7 @@ tbody:hover > tr:hover td {
     @include opacity(1.0);
 }
 
+/* Tweaks */
 /* Checkbox Toggle */
 
 .toggle {
@@ -575,7 +583,8 @@ tbody:hover > tr:hover td {
     display:block;
 }
 
-/* Padding Sections */
+/* Fix Homepage alignment */
+/* Padding */
 #title {
     padding-bottom:100px;
 }
@@ -584,19 +593,48 @@ tbody:hover > tr:hover td {
     padding-bottom:270px;
 }
 
-/* Fix Homepage alignment */
 #Home h2 {
   margin-top: 0px;
   line-height: 30px;
+  font-size: 25px;
 }
 
-section {
+.section {
   padding-bottom: 0px;
 }
 
-section {
-  padding-bottom: 0px;
+h1 {
+  margin-bottom: 20px;
 }
+/* Size issues */
+#Home .section:first-of-type {
+  padding-bottom: 150px !important;
+}
+
+.section:last-of-type {
+  padding-bottom: 100px;
+  flex:1;
+}
+
+body {
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+#main {
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+#main > div {
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
 /* Local Variables: */
 /* mode: web */
 /* End: */
