@@ -606,14 +606,18 @@ tbody:hover > tr:hover td {
 h1 {
   margin-bottom: 20px;
 }
+
 /* Size issues */
 #Home .section:first-of-type {
   padding-bottom: 150px !important;
 }
 
+
 .section:last-of-type {
-  padding-bottom: 100px;
-  flex:1;
+    padding-bottom: 250px;
+}
+.section:last-of-type::after {
+    content:"";
 }
 
 body {
