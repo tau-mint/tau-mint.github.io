@@ -612,9 +612,8 @@ h1 {
   padding-bottom: 150px !important;
 }
 
-
 .section:last-of-type {
-    padding-bottom: 250px;
+    padding-bottom: 100px;
 }
 .section:last-of-type::after {
     content:"";
@@ -622,21 +621,6 @@ h1 {
 
 body {
   height: 100vh;
-  display:flex;
-  flex-direction:column;
-  flex:1;
-}
-
-#main {
-  display:flex;
-  flex-direction:column;
-  flex:1;
-}
-
-#main > div {
-  display:flex;
-  flex-direction:column;
-  flex:1;
 }
 
 /* Local Variables: */
