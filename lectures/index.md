@@ -18,12 +18,13 @@ fa-icon: mortar-board
 {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
 <div class="sectiondivider">
 </div>
-<div id="{{id}}" class="section p-{{id}}">
+<div id="{{id}}" class="section lecture p-{{id}}">
   <input type="checkbox" id="toggle-{{id}}" class="toggle">
-  <label for="toggle-{{id}}" onclick>
     <div id="excerpt-{{id}}" class="container excerpt">
       {{ page.excerpt }}
-    </div>
+      </div>
+  <label for="toggle-{{id}}" onclick>
+  <div id="button-{{id}}" class="container center">Display Abstracts</div>
   </label>
   <div id="content-{{id}}" class="container {{ page.style }} content">
     {{ page.content }}
@@ -35,4 +36,3 @@ fa-icon: mortar-board
 <!-- Local Variables:  -->
 <!-- mode: web -->
 <!-- End: -->
-

@@ -583,6 +583,10 @@ tbody:hover > tr:hover td {
     display:block;
 }
 
+.toggle:checked ~ .excerpt {
+    display:none;
+}
+
 /* Fix Homepage alignment */
 /* Padding */
 #title {
