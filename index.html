@@ -43,18 +43,65 @@ style: center
 </div>
 <div id="upcoming" class="section upcoming bg-mint2">
   <div class="container {{page.style}}">
-    <h2>Upcoming</h2>
-    {% assign upcoming = false %}
-    {% for post in site.posts reversed%}
+    <h2>Upcoming Events</h2>
+    <div class="container {{page.style}}">
+    <h3><a href="lectures">MINT Distinguished Lectures</a></h3>
+    {% assign upcoming_fl = false %}
+    {% assign upcoming_sl = false %}
+    {% for post in site.posts reversed %}
     {% if post.date >= site.time %}
+    {% if post.categories contains 'lectures' %}
+
+    {% if upcoming_fl == true %}
+    {% assign upcoming_sl = true %}
+    {% else %}
+    {% assign upcoming_fl = true %}
+    {% endif %}
+
     {{ post.excerpt }}
-    {% assign upcoming = true %}
+
+
+    {% if upcoming_sl == true %}
     {% break %}
     {% endif %}
-    {% endfor %}
-    {% if upcoming != true %}
-    <h3>No upcoming scheduled</h3>
     {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% if upcoming_fl == false %}
+    <h4>No upcoming lectures scheduled</h4>
+    {% endif %}
+    </div>
+
+    <hr/>
+
+    <div class="container {{page.style}}">
+    <h3><a href="events">Events supported by MINT</a></h3>
+    {% assign upcoming_fl = false %}
+    {% assign upcoming_sl = false %}
+    {% for post in site.posts reversed %}
+    {% if post.date >= site.time %}
+    {% if post.categories contains 'events' %}
+
+    {% if upcoming_fl == true %}
+    {% assign upcoming_sl = true %}
+    {% else %}
+    {% assign upcoming_fl = true %}
+    {% endif %}
+
+    {{ post.excerpt }}
+
+
+    {% if upcoming_sl == true %}
+    {% break %}
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% if upcoming_fl == false %}
+    <h4>No upcoming events scheduled</h4>
+    {% endif %}
+    </div>
+
   </div>
 </div>
 
