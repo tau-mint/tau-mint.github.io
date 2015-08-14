@@ -7,29 +7,21 @@ style: center
 fa-icon: mortar-board
 ---
 
-# MINT Events
+<div id="title" class="title section center">
+
+<h1> Conferences and workshops supported by MINT </h1>
+
+</div>
 
 {% for page in site.posts reversed %}
 {% if page.categories contains 'events' %}
 {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+<div class="sectiondivider">
+</div>
 <div id="{{id}}" class="section p-{{id}}">
-  {% if page.icon %}
-  <div class="subtlecircle sectiondivider imaged">
-    <img src="{{page.icon}}" alt="section icon" />
-    <h5 class="icon-title">{{ page.title }}</h5>
-  </div>
-  {% elsif page.fa-icon %}
-  <div class="subtlecircle sectiondivider faicon">
-    <span class="fa-stack">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
-    </span>
-    <h5 class="icon-title">{{ page.title }}</h5>
-  </div>
-  {% endif %}
-  <div class="container {{ page.style }}">
-    {{ page.content }}
-  </div>
+<div class="container center {{ page.style }}">
+{{ page.content }}
+</div>
 </div>
 {% endif %}
 {% endfor %}
@@ -37,4 +29,3 @@ fa-icon: mortar-board
 <!-- Local Variables:  -->
 <!-- mode: web -->
 <!-- End: -->
-
