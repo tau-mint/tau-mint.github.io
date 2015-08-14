@@ -191,7 +191,7 @@ nav ul li:hover, nav ul li.active {
 
 
 #footer {
-    padding: 8px 0;
+    padding:0;
     min-height:0;
     text-align:center;
     background-color:#2e2e2e;
@@ -204,6 +204,8 @@ nav ul li:hover, nav ul li.active {
   }
 
 #footer .container p { font-size:13px; margin:0; }
+
+#footer .container .center { font-size:10px; margin:0; }
 
 .subtlecircle {
     text-align:center;
