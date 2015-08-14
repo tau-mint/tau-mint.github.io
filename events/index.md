@@ -19,7 +19,7 @@ fa-icon: mortar-board
 <div class="sectiondivider">
 </div>
 <div id="{{id}}" class="section p-{{id}}">
-<div class="container center {{ page.style }}">
+<div class="container center event {{ page.style }}">
 {{ page.content }}
 </div>
 </div>

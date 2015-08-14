@@ -629,6 +629,14 @@ body {
   height: 100vh;
 }
 
+.event h4 {
+    margin-top: 10px;
+}
+
+.event h3 {
+    margin-top: 15px;
+}
+
 /* Local Variables: */
 /* mode: web */
 /* End: */
