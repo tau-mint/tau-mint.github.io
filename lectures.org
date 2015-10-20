@@ -1,4 +1,0 @@
-|       Date | Day |  Time | Location      | Title                                                            |
-|------------+-----+-------+---------------+------------------------------------------------------------------|
-| 2015-06-08 | Mon | 12:15 | Schreiber 006 | [Random matrices: Gaps between eigenvalues](#vanlu1)             |
-| 2015-06-09 | Tue | 14:10 | Schreiber 209 | [Roots of random polynomials with general coefficients](vanlu#2) |

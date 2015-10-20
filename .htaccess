@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mint-tau.github.io [NC,OR]
+RewriteCond %{HTTP_HOST} ^mint-tau.github.com [NC]
+RewriteRule ^(.*)$ http://www.math.tau.ac.il/~mint/$1 [L,R=301,NC]
